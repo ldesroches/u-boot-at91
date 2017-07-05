@@ -630,6 +630,14 @@
 				status = "disabled";
 			};
 
+			uart2: serial@f8024000 {
+				compatible = "atmel,at91sam9260-usart";
+				reg = <0xf8024000 0x100>;
+				clocks = <&uart2_clk>;
+				clock-names = "usart";
+				status = "disabled";
+			};
+
 			i2c0: i2c@f8028000 {
 				compatible = "atmel,sama5d2-i2c";
 				reg = <0xf8028000 0x100>;
